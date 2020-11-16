@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | CSC 91897 - project-game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BlobWebGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+  <br><br><p style="font-size:14px;color:blue;text-align:center">Arrow Keys to Move, Space to Jump, Get to the Chest and collect coins on the way!  <<=Restart, <=Retry Level</p>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1140px; height: 640px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">CSC - project-game</div>
+      </div>
+    </div>
+  </body>
+</html>
